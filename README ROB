@@ -1,0 +1,9 @@
+//to retrain
+
+cd tensorflow
+
+python3 tensorflow/examples/image_retraining/retrain.py --image_dir ~/"The file name of files of images we're training"
+
+
+//to test image
+python3 tensorflow/examples/label_image/label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --input_layer=Mul --output_layer=final_result --input_mean=128 --input_std=128 --image=$HOME/desktop/soccerball/ball.jpg <--- change for where the picture we're testing for 
